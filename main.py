@@ -5,14 +5,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-import config
 
 # (5/5 points) Initial comments with your name, class and project at the top of your .py file.
 # (5/5 points) Proper import of packages used.
 
+# get overall homeless data from dataset
+data = pd.read_excel("2007-2022-PIT-Counts-by-State.xlsx", sheet_name= "2022", index_col=0)
 
-
-
+print(data["Overall Homeless, 2022"]["Total"])
 # (20/20 points) Using a data source of your choice, such as data from data.gov or using the Faker package, generate or retrieve some data for creating basic statistics on. This will generally come in as json data, etc.
 # Think of some question you would like to solve such as:
 # "How many homes in the US have access to 100Mbps Internet or more?"
