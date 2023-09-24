@@ -13,4 +13,3 @@ Please run the following:
 ```
 pip install -r requirements.txt
 ```
-## Usage
